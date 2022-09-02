@@ -19,6 +19,23 @@
   gtag('config', 'AW-580579052');
 </script>
 
+    <!-- Event snippet for Page view - Bluesider gamecraft conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-580579052/cHQoCLPTtNsDEOzd65QC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     <style>
         *{
             font-family: 'Poppins', sans-serif;
@@ -152,7 +169,7 @@
                     </li>
                 </div>
                 <div class="download">
-                    <a href="https://bit.ly/3KCw2y3" title="button" class="btn">Download Now</a>
+                    <a href="https://bit.ly/3KCw2y3" title="button" class="btn" onclick="gtag_report_conversion()">Download Now</a>
                 </div>
                 <h4 class="desc">Screenshots</h4>
                 <div class="screenbox">
@@ -190,7 +207,7 @@
                 </div>
             </div><br/>
             <div class="download">
-                <a href="https://bit.ly/3KCw2y3" title="button" class="btn">Download Now</a>
+                <a href="https://bit.ly/3KCw2y3" title="button" onclick="gtag_report_conversion()" class="btn">Download Now</a>
             </div>
         </div>
     </div>
