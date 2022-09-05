@@ -169,8 +169,48 @@ function gtag_report_conversion(url) {
                     </li>
                 </div>
                 <div class="download">
-                    <a href="https://bit.ly/3KCw2y3" title="button" class="btn" onclick="gtag_report_conversion()">Download Now</a>
+                                        <a onclick="start(), gtag_report_conversion()" href="#" title="button" id="downbtn" class="btn">Download Now</a>
                 </div>
+
+                <p><a href="#download" id="button" style="font-size: 20px;"></a></p>
+<script>
+
+    function start(){
+// Set the date we're counting down to
+var countDownDate = new Date().setSeconds(new Date().getSeconds() + 17);
+document.getElementById("button").style.visibility = "hidden";
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("downbtn").innerHTML = "Please wait " + seconds +" seconds";
+//   document.getElementById("demo").innerHTML = "<h3 style='color:red;'>Please wait " + seconds +" seconds to Download...</h3>";
+    
+  // If the count down is over, write some text and show button to download
+  if (distance < 0) {
+    clearInterval(x);
+    window.location.href = "https://bit.ly/3cNhFKN";
+    document.getElementById("demo").innerHTML = "Click to download:";
+    document.getElementById("button").style.visibility = "visible";
+  }
+}, 1000);
+
+function startDownload() {
+   // here start the download
+}
+    }
+</script>
+                <p id="demo"></p>
+                
                 <h4 class="desc">Screenshots</h4>
                 <div class="screenbox">
                 <div class="scroll">
