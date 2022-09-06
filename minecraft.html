@@ -91,10 +91,10 @@ function gtag_report_conversion(url) {
             margin: 20px 0 35px 0;
         }
         .btn{
-            border: 1px solid #c657ff;
+            border: 1px solid #a138d7;
             border-radius: 5px;
             padding: 10px 95px;
-            background: #c657ff;
+            background: ##a138d7;
             color: #fff;
             text-decoration: none;
         }
@@ -155,7 +155,7 @@ function gtag_report_conversion(url) {
             <img src="https://preview.redd.it/ak9w918zi5r81.png?auto=webp&s=656d488bada3b078187c7aa27fe88d5574b2f727" alt="Minecraft java edition free download" class="logo">
             <div class="title">Minecraft</div>
             <div class="info">
-                <div id="downbtn" class="list">
+                <div class="list">
                     <li>
                         <p>Developer</p>
                         <p>Mojang</p>
@@ -170,7 +170,7 @@ function gtag_report_conversion(url) {
                     </li>
                 </div>
                 <div class="download">
-                                        <a onclick="start(), gtag_report_conversion()" href="#" title="button"  class="btn">Download Now</a>
+                                        <a onclick="start(), gtag_report_conversion()" href="#" id="downbtn" title="button"  class="btn">Download Now</a>
                 </div>
 
                 <p><a href="#download" id="button" style="font-size: 20px;"></a></p>
@@ -178,7 +178,7 @@ function gtag_report_conversion(url) {
 
     function start(){
 // Set the date we're counting down to
-var countDownDate = new Date().setSeconds(new Date().getSeconds() + 17);
+var countDownDate = new Date().setSeconds(new Date().getSeconds() + 13);
 document.getElementById("button").style.visibility = "hidden";
 
 // Update the count down every 1 second
