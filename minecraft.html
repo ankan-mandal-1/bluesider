@@ -139,6 +139,26 @@
         .labels{opacity: 0;
     height: 5px;
     overflow: hidden;}
+        
+        a.btn {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+        
     </style>
 </head>
 <body>
@@ -167,7 +187,7 @@
                     </ol>
                 </div>
                 <div class="download">
-                   <a name="download button" href="https://bit.ly/3cNhFKN" id="downbtn" title="button"  class="btn">Download Now</a>
+                   <a name="download button" href="https://bit.ly/3cNhFKN" id="downbtn" title="button"  class="btn">DOWNLOAD</a>
                 </div>
 
                 <p><a href="#download" id="button" style="font-size: 20px; display: none; visibility: hidden;">game</a></p>
