@@ -120,7 +120,7 @@
         .screenshot{
             width: 290px;
             height:164px;
-            margin: 10px;
+            margin: 3px;
             border-radius: 5px;
             box-shadow: 1px 2px 5px 0px rgb(0 0 0 / 34%);
             background-color: #ebebeb;
@@ -180,7 +180,11 @@
     </header>
     <div class="container">
         <div class="app-info">
-            <img src="./img/minecraft/minecraft-java-logo.png" alt="Minecraft java edition free download" class="logo">
+	    <picture>
+                <source srcset="./img/minecraft/minecraft-java-logo.webp" type="image/webp" alt="Minecraft java edition free download" class="logo" >
+                <source srcset="./img/minecraft/minecraft-java-logo.png" type="image/jpeg" alt="Minecraft java edition free download" class="logo" > 
+                <img src="./img/minecraft/minecraft-java-logo.png" alt="Minecraft java edition free download" class="logo">
+            </picture>
             <div class="title">Minecraft</div>
             <div class="info">
                 <div class="list">
@@ -245,13 +249,25 @@ function startDownload() {
                 <h4 class="desc">Screenshots</h4>
                 <div class="screenbox">
                 <div class="scroll">
-                    <img src="./img/minecraft/screenshot-1.png" alt="minecraft apk screenshot" class="screenshot" />
+		    <picture>
+                        <source srcset="./img/minecraft/screenshot-1.webp" type="image/webp" alt="minecraft apk screenshot" class="screenshot" >
+                        <source srcset="./img/minecraft/screenshot-1.png" type="image/jpeg" alt="minecraft apk screenshot" class="screenshot"> 
+                        <img src="./img/minecraft/screenshot-1.png" class="screenshot" alt="minecraft apk screenshot" >
+                    </picture>
                 </div>
                 <div class="scroll">
-                    <img src="./img/minecraft/screenshot-2.png" alt="minecraft game screenshot" class="screenshot" />
+		   <picture>
+                        <source srcset="./img/minecraft/screenshot-2.webp" type="image/webp" alt="minecraft game screenshot 2" class="screenshot" >
+                        <source srcset="./img/minecraft/screenshot-2.png" type="image/jpeg" alt="minecraft game screenshot 2" class="screenshot" >
+                        <img src="./img/minecraft/screenshot-2.png" class="screenshot" alt="minecraft game screenshot 2" >
+                    </picture>
                 </div>
                 <div class="scroll">
-                <img src="./img/minecraft/screenshot-3.png" alt="screenshot minecraft game 3" loading="lazy" class="screenshot" />
+                 <picture>
+                        <source srcset="./img/minecraft/screenshot-3.webp" type="image/webp" class="screenshot" alt="minecraft game screenshot 3" loading="lazy">
+                        <source srcset="./img/minecraft/screenshot-3.png" type="image/jpeg" class="screenshot" alt="minecraft game screenshot 3" loading="lazy">
+                        <img src="./img/minecraft/screenshot-3.png" class="screenshot" loading="lazy" alt="minecraft game screenshot 3" >
+                    </picture>
                 </div>
                 </div>
                 <div class="desc">
